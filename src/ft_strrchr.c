@@ -1,22 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_strrchr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/31 23:16:05 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/08/06 13:47:49 by alfgarci         ###   ########.fr       */
+/*   Created: 2022/08/06 13:48:15 by alfgarci          #+#    #+#             */
+/*   Updated: 2022/08/06 13:57:10 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*strchr(const char *s, int c)
+char	*strrchr(const char *s, int c)
 {
-	int	i;
+	int		i;
+	char	*p;
 
-	i = -1;
+	p = NULL;
 	while (s[++i])
 		if (s[i] == c)
-			return (&s[i]);
-	return (NULL);
+			p = &s[i];
+	return (p);
 }

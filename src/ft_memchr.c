@@ -1,22 +1,15 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strchr.c                                        :+:      :+:    :+:   */
+/*   ft_memchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/07/31 23:16:05 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/08/06 13:47:49 by alfgarci         ###   ########.fr       */
+/*   Created: 2022/08/06 14:03:11 by alfgarci          #+#    #+#             */
+/*   Updated: 2022/08/06 14:15:26 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*strchr(const char *s, int c)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-	int	i;
-
-	i = -1;
-	while (s[++i])
-		if (s[i] == c)
-			return (&s[i]);
-	return (NULL);
 }
