@@ -6,16 +6,16 @@
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/30 20:58:25 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/07/30 21:07:16 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/08/07 15:43:01 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_strlen(char *str)
+size_t	ft_strlen(const char *s)
 {
 	int	i;
 
 	i = 0;
-	while (str[i])
+	while (s[i])
 		i++;
 	return (i);
 }
