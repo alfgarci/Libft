@@ -1,22 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_calloc.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/06 14:03:11 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/08/06 17:49:54 by alfgarci         ###   ########.fr       */
+/*   Created: 2022/08/07 11:06:10 by alfgarci          #+#    #+#             */
+/*   Updated: 2022/08/07 11:16:02 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memchr(const void *s, int c, size_t n)
+void	*ft_calloc(size_t count, size_t size)
 {
-	int	i;
+	void	*tmp;
+	int		i;
 
 	i = -1;
-	while (++i < n)
-		if ((unsigned char)s[i] == (unsigned char)c)
-			return (&s[i]);
-	return (NULL);
+	tmp = malloc(count * size);
+	if (!tmp)
+		return (0);
+	while (++i < (count * size))
+		tmp[i] = 0;
+	return (tmp);
 }

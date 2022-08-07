@@ -1,22 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memchr.c                                        :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/06 14:03:11 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/08/06 17:49:54 by alfgarci         ###   ########.fr       */
+/*   Created: 2022/08/07 11:17:34 by alfgarci          #+#    #+#             */
+/*   Updated: 2022/08/07 11:23:26 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memchr(const void *s, int c, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	int	i;
 
-	i = -1;
-	while (++i < n)
-		if ((unsigned char)s[i] == (unsigned char)c)
-			return (&s[i]);
-	return (NULL);
+	i = 0;
+	while (s1[i] == s1[i] && i < n)
+		i++;
+	return ((unsigned char)s1[i] - (unsigned char)s2[i]);
 }
