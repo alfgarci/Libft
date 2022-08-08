@@ -6,9 +6,11 @@
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/30 21:09:10 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/08/07 15:21:45 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/08/08 12:35:53 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_bzero(void *b, size_t len)
 {
@@ -16,5 +18,5 @@ void	ft_bzero(void *b, size_t len)
 
 	i = 0;
 	while (i < len)
-		*(b + i++) = 0;
+		*(unsigned char *)(b + i++) = 0;
 }

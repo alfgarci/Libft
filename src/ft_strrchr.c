@@ -6,7 +6,7 @@
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/06 13:48:15 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/08/07 15:47:49 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/08/08 12:33:49 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,10 +15,10 @@ char	*strrchr(const char *s, int c)
 	int		i;
 	char	*p;
 
-	p = NULL;
+	p = 0;
 	i = -1;
 	while (s[++i])
 		if (s[i] == c)
-			p = &s[i];
+			p = (char *)&s[i];
 	return (p);
 }

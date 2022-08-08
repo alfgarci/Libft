@@ -6,11 +6,11 @@
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/07 12:17:46 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/08/07 13:02:47 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/08/08 12:37:23 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {

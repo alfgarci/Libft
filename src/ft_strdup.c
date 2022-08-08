@@ -6,11 +6,11 @@
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/06 14:05:53 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/08/06 14:14:57 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/08/08 12:37:14 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/libft.h"
+#include "libft.h"
 
 char	*ft_strdup(const char *s1)
 {

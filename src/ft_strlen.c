@@ -6,13 +6,15 @@
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/30 20:58:25 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/08/07 15:43:01 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/08/08 12:37:58 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+
 size_t	ft_strlen(const char *s)
 {
-	int	i;
+	size_t	i;
 
 	i = 0;
 	while (s[i])
