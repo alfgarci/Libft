@@ -6,7 +6,7 @@
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/06 17:04:15 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/08/06 17:36:11 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/08/08 19:15:37 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,9 +28,6 @@ int	ft_atoi(const char *str)
 		i++;
 	}
 	while (str[i] >= '0' && str[i] <= '9')
-	{
-		n = n * 10 + (str[i] - 48);
-		i++;
-	}
+		n = n * 10 + (str[i++] - 48);
 	return (n * sing);
 }
