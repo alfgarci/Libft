@@ -6,7 +6,7 @@
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/09 12:27:49 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/08/09 18:40:57 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/08/09 18:59:54 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -54,6 +54,8 @@ char	**ft_split(const char *s, char c)
 
 	i = -1;
 	j = -1;
+	if (!s)
+		return (NULL);
 	arr_s = (char **)malloc((count_strs(s, c) + 1) * sizeof(char *));
 	if (!arr_s)
 		return (NULL);
