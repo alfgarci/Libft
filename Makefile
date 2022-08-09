@@ -6,7 +6,7 @@
 #    By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/07 18:44:21 by alfgarci          #+#    #+#              #
-#    Updated: 2022/08/07 19:14:18 by alfgarci         ###   ########.fr        #
+#    Updated: 2022/08/09 12:27:23 by alfgarci         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -16,12 +16,14 @@ SRCS =		src/ft_atoi.c \
 			src/ft_isalnum.c \
 			src/ft_isalpha.c \
 			src/ft_isascii.c \
+			src/ft_isdigit.c \
 			src/ft_isprint.c \
 			src/ft_memchr.c \
 			src/ft_memcmp.c \
 			src/ft_memcpy.c \
 			src/ft_memmove.c \
 			src/ft_memset.c \
+			src/ft_split.c \
 			src/ft_strchr.c \
 			src/ft_strdup.c \
 			src/ft_strjoin.c \
@@ -31,6 +33,7 @@ SRCS =		src/ft_atoi.c \
 			src/ft_strncmp.c \
 			src/ft_strnstr.c \
 			src/ft_strrchr.c \
+			src/ft_substr.c \
 			src/ft_tolower.c \
 			src/ft_toupper.c
 

@@ -6,13 +6,13 @@
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/31 22:39:47 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/08/08 19:18:09 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/08/09 12:09:32 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
 	size_t	i;
 
