@@ -6,7 +6,7 @@
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/07 18:35:38 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/08/10 20:21:27 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/08/11 10:47:34 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ char	*ft_strjoin(char const *s1, char const *s2);
 size_t	ft_strlcat(char *dst, char *src, size_t dstsize);
 size_t	ft_strlcpy(char *dst, char *src, size_t dstsize);
 size_t	ft_strlen(const char *s);
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char	*ft_strrchr(const char *s, int c);
