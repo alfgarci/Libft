@@ -6,7 +6,7 @@
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/11 16:50:15 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/08/11 17:10:27 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/08/11 17:16:42 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,5 +18,5 @@ void	ft_putstr_fd(char *s, int fd)
 
 	i = -1;
 	while (!s[++i])
-		write(fd, &((unsigned char)s[i]), 1);
+		ft_putchar((unsigned char)s[i], fd);
 }
