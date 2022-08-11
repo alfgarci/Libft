@@ -6,7 +6,7 @@
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/11 16:50:15 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/08/11 16:58:20 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/08/11 17:09:47 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,10 +14,6 @@
 
 void	ft_putendl_fd(char *s, int fd)
 {
-	int	i;
-
-	i = -1;
-	while (!s[++i])
-		write(fd, &s[i], 1);
+	ft_putstr_fd(s, fd);
 	write(fd, "\n", 1);
 }
