@@ -6,7 +6,7 @@
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/10 20:21:36 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/08/11 10:17:43 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/08/11 10:38:49 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -51,16 +51,8 @@ char	*ft_itoa(int n)
 	while (++i < num_digs - is_neg)
 	{
 		cad[num_digs - (i + 1)] = (n % 10) + 48;
-		printf("%d\n", (n % 10));
 		n /= 10;
 	}
-	cad[i] = '\0';
+	cad[++i] = '\0';
 	return (cad);
 }
-/*
-int	main()
-{
-	int n = 123456;
-	printf("Numero en str: $%s$", ft_itoa(n));
-	return (0);
-}*/
