@@ -6,7 +6,7 @@
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/31 22:49:50 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/09/12 22:10:43 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/09/12 22:25:19 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 				*(unsigned char *)(dst + j) = *(unsigned char *)(src + j);
 				j--;
 		}
+		return (dst);
 	}
 	while (i < len)
 	{

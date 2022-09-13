@@ -6,7 +6,7 @@
 #    By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/08/07 18:44:21 by alfgarci          #+#    #+#              #
-#    Updated: 2022/08/11 16:49:33 by alfgarci         ###   ########.fr        #
+#    Updated: 2022/09/13 01:43:18 by alfgarci         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,7 +43,18 @@ SRCS =		src/ft_atoi.c \
 			src/ft_tolower.c \
 			src/ft_toupper.c
 
+SRCSB =		src/ft_lstnew_bonus.c \
+			src/ft_lstadd_front_bonus.c \
+			src/ft_lstsize_bonus.c \
+			src/ft_lstlast_bonus.c \
+			src/ft_lstadd_back_bonus.c \
+			src/ft_lstdelone_bonus.c \
+			src/ft_lstclear_bonus.c \
+			src/ft_lstiter_bonus.c
+
 OBJS 	=	${SRCS:.c=.o}
+
+OBJSB	=	${SRCSB:.c=.o}
 	
 INC 	=	includes/
 
@@ -61,9 +72,14 @@ ${NAME}:	${OBJS}
 all:		${NAME}
 
 clean:
-		rm -f ${OBJS}
+		rm -f ${OBJS} ${OBJSB}
 
 fclean:		clean
 		rm -f ${NAME}
 
 re:		fclean all
+
+bonus:		${OBJS} ${OBJSB}
+		ar rcs ${NAME} ${OBJS} ${OBJSB}
+
+.PHONY:	all clean fclean re bonus

@@ -6,7 +6,7 @@
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/08/07 18:35:38 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/09/05 16:23:18 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/09/13 01:37:12 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,7 @@ void	ft_lstadd_front(t_list **lst, t_list *new);
 int		ft_lstsize(t_list *lst);
 t_list	*ft_lstlast(t_list *lst);
 void	ft_lstadd_back(t_list **lst, t_list *new);
-void	ft_lsdelone(t_list *lst, void (*del)(void *));
+void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_lstiter(t_list *lst, void (*f)(void *));
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
@@ -57,6 +57,7 @@ char	*ft_strjoin(char const *s1, char const *s2);
 size_t	ft_strlcat(char *dst, char *src, size_t dstsize);
 size_t	ft_strlcpy(char *dst, char *src, size_t dstsize);
 size_t	ft_strlen(const char *s);
+void    *ft_striteri(char *s, void (*f)(unsigned int, char *));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
