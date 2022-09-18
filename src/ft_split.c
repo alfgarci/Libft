@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/09 12:27:49 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/08/09 18:59:54 by alfgarci         ###   ########.fr       */
+/*   Created: 2022/09/16 17:20:45 by alfgarci          #+#    #+#             */
+/*   Updated: 2022/09/16 20:18:00 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -67,20 +67,3 @@ char	**ft_split(const char *s, char c)
 	arr_s[++j] = NULL;
 	return (arr_s);
 }
-/*
-int	main(int ac, char **av)
-{
-	char	*to_sp;
-	char	sep;
-	char	**spp;
-
-	if (ac == 3)
-	{
-		to_sp = av[1];
-		sep = av[2][0];
-		spp = ft_split(to_sp, sep);
-		for (int i = 0; i < count_strs(to_sp, sep); i++)
-			printf("Cad %d -> $%s$\n", i, spp[i]);
-	}
-	return (0);
-}*/

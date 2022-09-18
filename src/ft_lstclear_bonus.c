@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/13 01:29:28 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/09/13 01:33:35 by alfgarci         ###   ########.fr       */
+/*   Created: 2022/09/17 01:29:28 by alfgarci          #+#    #+#             */
+/*   Updated: 2022/09/18 11:42:37 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))
 {
-	t_list *aux;
+	t_list	*aux;
 
 	while (lst && *lst)
 	{

@@ -5,14 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/11 10:47:50 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/09/13 00:24:09 by alfgarci         ###   ########.fr       */
+/*   Created: 2022/09/15 18:12:50 by alfgarci          #+#    #+#             */
+/*   Updated: 2022/09/18 11:37:37 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-
-void	*ft_striteri(char *s, void (*f)(unsigned int, char *))
+void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
 	int		i;
 

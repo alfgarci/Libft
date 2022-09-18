@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/08/07 18:35:38 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/09/13 01:37:12 by alfgarci         ###   ########.fr       */
+/*   Created: 2022/09/18 18:35:38 by alfgarci          #+#    #+#             */
+/*   Updated: 2022/09/18 22:03:20 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,10 +16,10 @@
 # include <string.h>
 # include <unistd.h>
 
-typedef struct	s_list
+typedef struct s_list
 {
-		void			*content;
-		struct s_list	*next;
+	void			*content;
+	struct s_list	*next;
 }						t_list;
 
 t_list	*ft_lstnew(void *content);
@@ -57,7 +57,7 @@ char	*ft_strjoin(char const *s1, char const *s2);
 size_t	ft_strlcat(char *dst, char *src, size_t dstsize);
 size_t	ft_strlcpy(char *dst, char *src, size_t dstsize);
 size_t	ft_strlen(const char *s);
-void    *ft_striteri(char *s, void (*f)(unsigned int, char *));
+void	ft_striteri(char *s, void (*f)(unsigned int, char *));
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);

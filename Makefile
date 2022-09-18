@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/08/07 18:44:21 by alfgarci          #+#    #+#              #
-#    Updated: 2022/09/13 01:43:18 by alfgarci         ###   ########.fr        #
+#    Created: 2022/09/18 18:44:21 by alfgarci          #+#    #+#              #
+#    Updated: 2022/09/18 22:00:02 by alfgarci         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,6 +32,7 @@ SRCS =		src/ft_atoi.c \
 			src/ft_strchr.c \
 			src/ft_strdup.c \
 			src/ft_strjoin.c \
+			src/ft_striteri.c \
 			src/ft_strlcat.c \
 			src/ft_strlcpy.c \
 			src/ft_strlen.c \
@@ -39,6 +40,7 @@ SRCS =		src/ft_atoi.c \
 			src/ft_strncmp.c \
 			src/ft_strnstr.c \
 			src/ft_strrchr.c \
+			src/ft_strtrim.c \
 			src/ft_substr.c \
 			src/ft_tolower.c \
 			src/ft_toupper.c
@@ -50,7 +52,8 @@ SRCSB =		src/ft_lstnew_bonus.c \
 			src/ft_lstadd_back_bonus.c \
 			src/ft_lstdelone_bonus.c \
 			src/ft_lstclear_bonus.c \
-			src/ft_lstiter_bonus.c
+			src/ft_lstiter_bonus.c \
+			src/ft_lstmap_bonus.c
 
 OBJS 	=	${SRCS:.c=.o}
 
