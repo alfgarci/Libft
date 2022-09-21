@@ -6,7 +6,7 @@
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/14 10:37:35 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/09/18 11:27:26 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/09/21 09:53:51 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,6 +20,8 @@ size_t	ft_strlcat(char *dst, char *src, size_t dstsize)
 	size_t	j;
 
 	i = 0;
+	if (!dst && dstsize == 0)
+		return (0);
 	srclen = ft_strlen(src);
 	dstlen = ft_strlen(dst);
 	j = dstlen;

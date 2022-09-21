@@ -6,7 +6,7 @@
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 21:23:18 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/09/18 11:39:46 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/09/21 11:14:22 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,6 @@ void	ft_putnbr_fd(int n, int fd)
 	char	*num;
 
 	num = ft_itoa(n);
-	ft_putstr_fd(ft_itoa(n), fd);
+	ft_putstr_fd(num, fd);
 	free(num);
 }
