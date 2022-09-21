@@ -6,7 +6,7 @@
 #    By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/18 18:44:21 by alfgarci          #+#    #+#              #
-#    Updated: 2022/09/21 12:35:07 by alfgarci         ###   ########.fr        #
+#    Updated: 2022/09/21 23:09:09 by alfgarci         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -70,7 +70,6 @@ NAME 	=	libft.a
 
 ${NAME}:	${OBJS}
 		ar rc ${NAME} ${OBJS}
-		ranlib ${NAME}
 	
 all:		${NAME}
 
@@ -83,6 +82,6 @@ fclean:		clean
 re:		fclean all
 
 bonus:		${OBJS} ${OBJSB}
-		ar rcs ${NAME} ${OBJS} ${OBJSB}
+		ar rc ${NAME} ${OBJS} ${OBJSB}
 
 .PHONY:	all clean fclean re bonus

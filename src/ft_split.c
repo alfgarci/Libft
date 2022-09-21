@@ -6,7 +6,7 @@
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 17:20:45 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/09/21 13:09:49 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/09/21 22:49:36 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,64 +23,68 @@ static char	**fail_free(char **arr_s, int size)
 	return (NULL);
 }
 
-static char	*get_word(const char *s, char c)
-{
-	int		i;
-	int		count;
-	char	*tmp;
-
-	i = -1;
-	count = 0;
-	while (s[++i] != c)
-		count++;
-	tmp = (char *)malloc((count + 1) * sizeof(char));
-	if (!tmp)
-		return (NULL);
-	i = -1;
-	while (s[++i] != c)
-		tmp[i] = s[i];
-	return (tmp);
-}
-
 static int	count_strs(const char *s, char c)
 {
 	int	i;
 	int	count;
 
-	i = -1;
 	count = 0;
-	if (s[0] != c)
-		count++;
-	while (s[++i])
-		if (s[i] == c && s[i + 1] && s[i + 1] != c)
+	i = 0;
+	while (s[i] != '\0')
+	{
+		while (s[i] != '\0' && s[i] == c)
+			i++;
+		if (s[i] != '\0')
 			count++;
+		while (s[i] != '\0' && s[i] != c)
+			i++;
+	}
 	return (count);
+}
+
+static char	*get_word(const char *s, char c)
+{
+	int		len_word;
+	int		i;
+	char	*word;
+
+	i = -1;
+	len_word = 0;
+	while (s[len_word] && s[len_word] != c)
+		len_word++;
+	word = (char *)malloc(sizeof(char) * (len_word + 1));
+	if (!word)
+		return (NULL);
+	while (++i < len_word)
+		word[i] = s[i];
+	word[i] = '\0';
+	return (word);
 }
 
 char	**ft_split(const char *s, char c)
 {
-	char	**arr_s;
+	char	**strs;
 	int		i;
-	int		j;
 
-	i = -1;
-	j = -1;
+	i = 0;
 	if (!s)
 		return (NULL);
-	arr_s = (char **)malloc((count_strs(s, c) + 1) * sizeof(char *));
-	if (!arr_s)
+	strs = (char **)malloc((count_strs(s, c) + 1) * sizeof(char *));
+	if (!strs)
 		return (NULL);
-	if (s[0] != c)
-		arr_s[++j] = get_word((s + i + 1), c);
-	while (s[++i] != '\0')
+	while (*s != '\0')
 	{
-		if (s[i] == c && s[i + 1] && s[i + 1] != c)
+		while (*s != '\0' && *s == c)
+			s++;
+		if (*s != '\0')
 		{
-			arr_s[++j] = get_word((s + i + 1), c);
-			if (arr_s[j] == NULL)
-				return (fail_free(arr_s, j));
+			strs[i++] = get_word(s, c);
+			if (strs[i - 1] == NULL)
+				return (fail_free(strs, i - 1));
 		}
+		while (*s && *s != c)
+			s++;
 	}
-	arr_s[++j] = NULL;
-	return (arr_s);
+	strs[i] = 0;
+	return (strs);
 }

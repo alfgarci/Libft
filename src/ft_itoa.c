@@ -6,26 +6,23 @@
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 17:03:13 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/09/18 11:36:21 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/09/21 18:54:29 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	get_numdigs(int n)
+static int	get_numdigs(unsigned int n)
 {
-	int	i;
-	int	num;
+	size_t	num;
 
-	i = 10;
-	num = 1;
-	if (n < 0)
-		num++;
-	while (n / i != 0)
+	num = 0;
+	while (n > 9)
 	{
 		num++;
-		i *= 10;
+		n /= 10;
 	}
+	num++;
 	return (num);
 }
 
@@ -37,22 +34,23 @@ char	*ft_itoa(int n)
 	char	*cad;
 
 	i = -1;
-	is_neg = 0;
-	num_digs = get_numdigs(n);
+	is_neg = (n >= 0);
+	if (n == -2147483648)
+		return (ft_strdup("-2147483648"));
+	num_digs = get_numdigs(n * -(n < 0) + n * (n >= 0)) + (n < 0);
 	cad = (char *)malloc((num_digs + 1) * sizeof(char));
 	if (!cad)
 		return (NULL);
 	if (n < 0)
 	{
-		cad[0] = '-';
+		cad[++i] = '-';
 		n *= -1;
-		is_neg = 1;
 	}
-	while (++i < num_digs - is_neg)
+	while (++i < num_digs)
 	{
-		cad[num_digs - (i + 1)] = (n % 10) + 48;
+		cad[num_digs - i - is_neg] = (n % 10) + 48;
 		n /= 10;
 	}
-	cad[++i] = '\0';
+	cad[i] = '\0';
 	return (cad);
 }

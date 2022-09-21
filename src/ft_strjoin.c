@@ -6,13 +6,13 @@
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 15:05:48 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/09/18 11:35:00 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/09/21 22:45:35 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(const char *s1, const char *s2)
 {
 	char	*tmp;
 	char	*save;

@@ -6,13 +6,13 @@
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 16:12:10 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/09/18 11:35:52 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/09/21 22:47:29 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	is_in_set(char const *set, char c)
+static int	is_in_set(const char *set, char c)
 {
 	int	i;
 
@@ -23,7 +23,7 @@ static int	is_in_set(char const *set, char c)
 	return (0);
 }
 
-static int	len_start(char const *s1, char const *set)
+static int	len_start(const char *s1, const char *set)
 {
 	int	len_s;
 
@@ -34,7 +34,7 @@ static int	len_start(char const *s1, char const *set)
 	return (len_s);
 }
 
-static int	len_finsh(char const *s1, char const *set)
+static int	len_finsh(const char *s1, const char *set)
 {
 	int	i;
 	int	len_f;
@@ -50,7 +50,7 @@ static int	len_finsh(char const *s1, char const *set)
 	return (len_f);
 }
 
-char	*ft_strtrim(char const *s1, char const *set)
+char	*ft_strtrim(const char *s1, const char *set)
 {
 	char	*new;
 	int		len_f;
