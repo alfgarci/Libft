@@ -6,7 +6,7 @@
 #    By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/18 18:44:21 by alfgarci          #+#    #+#              #
-#    Updated: 2022/09/25 16:42:34 by alfgarci         ###   ########.fr        #
+#    Updated: 2022/09/25 17:09:09 by alfgarci         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -54,7 +54,8 @@ SRCS	=	${SRC_DIR}/ft_atoi.c \
 			${SRC_DIR}/ft_lstdelone.c \
 			${SRC_DIR}/ft_lstclear.c \
 			${SRC_DIR}/ft_lstiter.c \
-			${SRC_DIR}/ft_lstmap.c
+			${SRC_DIR}/ft_lstmap.c \
+			${SRC_DIR}/get_next_line.c
 
 OBJS 	=	${SRCS:.c=.o}
 
