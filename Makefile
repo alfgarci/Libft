@@ -6,7 +6,7 @@
 #    By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/18 18:44:21 by alfgarci          #+#    #+#              #
-#    Updated: 2022/09/25 17:09:09 by alfgarci         ###   ########.fr        #
+#    Updated: 2022/09/25 17:46:03 by alfgarci         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -55,7 +55,12 @@ SRCS	=	${SRC_DIR}/ft_atoi.c \
 			${SRC_DIR}/ft_lstclear.c \
 			${SRC_DIR}/ft_lstiter.c \
 			${SRC_DIR}/ft_lstmap.c \
-			${SRC_DIR}/get_next_line.c
+			${SRC_DIR}/get_next_line.c \
+			${SRC_DIR}/ft_printf_utils.c \
+			${SRC_DIR}/ft_puthex.c \
+			${SRC_DIR}/ft_putmem.c \
+			${SRC_DIR}/ft_putunsig.c \
+			${SRC_DIR}/ft_printf.c
 
 OBJS 	=	${SRCS:.c=.o}
 
@@ -81,4 +86,4 @@ fclean:		clean
 
 re:		fclean all
 
-.PHONY:	all clean fclean re 
+.PHONY:	all clean fclean  
