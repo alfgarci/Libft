@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstmap_bonus.c                                  :+:      :+:    :+:   */
+/*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
+/*   By: alfgarci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/17 18:21:57 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/09/18 22:07:14 by alfgarci         ###   ########.fr       */
+/*   Created: 2022/09/25 16:40:17 by alfgarci          #+#    #+#             */
+/*   Updated: 2022/09/25 16:40:19 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 {

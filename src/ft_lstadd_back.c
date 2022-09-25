@@ -1,24 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstlast_bonus.c                                 :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
+/*   By: alfgarci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/09/17 00:49:27 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/09/18 11:42:09 by alfgarci         ###   ########.fr       */
+/*   Created: 2022/09/25 16:39:10 by alfgarci          #+#    #+#             */
+/*   Updated: 2022/09/25 16:39:12 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
-t_list	*ft_lstlast(t_list *lst)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	while (lst)
+	t_list	*last_node;
+
+	if (lst)
 	{
-		if (!lst->next)
-			return (lst);
-		lst = lst->next;
+		if (*lst)
+		{
+			last_node = ft_lstlast(*lst);
+			last_node->next = new;
+		}
+		else
+			*lst = new;
 	}
-	return (lst);
 }

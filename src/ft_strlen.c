@@ -6,11 +6,11 @@
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/12 15:30:39 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/09/18 11:24:22 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/09/25 16:32:26 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 size_t	ft_strlen(const char *s)
 {

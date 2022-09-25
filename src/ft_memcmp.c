@@ -6,11 +6,11 @@
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 14:53:21 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/09/21 14:16:07 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/09/25 16:30:07 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {

@@ -6,11 +6,11 @@
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 18:30:15 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/09/18 11:38:10 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/09/25 16:30:33 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 void	ft_putchar_fd(char c, int fd)
 {

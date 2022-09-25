@@ -6,11 +6,11 @@
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 16:12:10 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/09/21 22:47:29 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/09/25 16:32:49 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 static int	is_in_set(const char *set, char c)
 {

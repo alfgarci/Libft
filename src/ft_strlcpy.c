@@ -6,11 +6,11 @@
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/13 19:32:56 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/09/18 11:26:23 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/09/25 16:32:19 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 size_t	ft_strlcpy(char *dst, char *src, size_t dstsize)
 {

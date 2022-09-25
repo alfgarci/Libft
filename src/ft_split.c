@@ -6,11 +6,11 @@
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 17:20:45 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/09/21 22:49:36 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/09/25 16:31:15 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 static char	**fail_free(char **arr_s, int size)
 {

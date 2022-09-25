@@ -6,11 +6,11 @@
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/16 14:52:15 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/09/21 16:06:06 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/09/25 16:30:03 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 void	*ft_memchr(const void *s, int c, size_t n)
 {

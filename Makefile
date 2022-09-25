@@ -6,59 +6,58 @@
 #    By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/09/18 18:44:21 by alfgarci          #+#    #+#              #
-#    Updated: 2022/09/21 23:09:09 by alfgarci         ###   ########.fr        #
+#    Updated: 2022/09/25 16:42:34 by alfgarci         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
-SRCS =		src/ft_atoi.c \
-			src/ft_bzero.c \
-			src/ft_calloc.c \
-			src/ft_isalnum.c \
-			src/ft_isalpha.c \
-			src/ft_isascii.c \
-			src/ft_isdigit.c \
-			src/ft_isprint.c \
-			src/ft_itoa.c \
-			src/ft_memchr.c \
-			src/ft_memcmp.c \
-			src/ft_memcpy.c \
-			src/ft_memmove.c \
-			src/ft_memset.c \
-			src/ft_putchar_fd.c \
-			src/ft_putendl_fd.c \
-			src/ft_putnbr_fd.c \
-			src/ft_putstr_fd.c \
-			src/ft_split.c \
-			src/ft_strchr.c \
-			src/ft_strdup.c \
-			src/ft_strjoin.c \
-			src/ft_striteri.c \
-			src/ft_strlcat.c \
-			src/ft_strlcpy.c \
-			src/ft_strlen.c \
-			src/ft_strmapi.c \
-			src/ft_strncmp.c \
-			src/ft_strnstr.c \
-			src/ft_strrchr.c \
-			src/ft_strtrim.c \
-			src/ft_substr.c \
-			src/ft_tolower.c \
-			src/ft_toupper.c
+SRC_DIR	=	src
 
-SRCSB =		src/ft_lstnew_bonus.c \
-			src/ft_lstadd_front_bonus.c \
-			src/ft_lstsize_bonus.c \
-			src/ft_lstlast_bonus.c \
-			src/ft_lstadd_back_bonus.c \
-			src/ft_lstdelone_bonus.c \
-			src/ft_lstclear_bonus.c \
-			src/ft_lstiter_bonus.c \
-			src/ft_lstmap_bonus.c
+SRCS	=	${SRC_DIR}/ft_atoi.c \
+			${SRC_DIR}/ft_bzero.c \
+			${SRC_DIR}/ft_calloc.c \
+			${SRC_DIR}/ft_isalnum.c \
+			${SRC_DIR}/ft_isalpha.c \
+			${SRC_DIR}/ft_isascii.c \
+			${SRC_DIR}/ft_isdigit.c \
+			${SRC_DIR}/ft_isprint.c \
+			${SRC_DIR}/ft_itoa.c \
+			${SRC_DIR}/ft_memchr.c \
+			${SRC_DIR}/ft_memcmp.c \
+			${SRC_DIR}/ft_memcpy.c \
+			${SRC_DIR}/ft_memmove.c \
+			${SRC_DIR}/ft_memset.c \
+			${SRC_DIR}/ft_putchar_fd.c \
+			${SRC_DIR}/ft_putendl_fd.c \
+			${SRC_DIR}/ft_putnbr_fd.c \
+			${SRC_DIR}/ft_putstr_fd.c \
+			${SRC_DIR}/ft_split.c \
+			${SRC_DIR}/ft_strchr.c \
+			${SRC_DIR}/ft_strdup.c \
+			${SRC_DIR}/ft_strjoin.c \
+			${SRC_DIR}/ft_striteri.c \
+			${SRC_DIR}/ft_strlcat.c \
+			${SRC_DIR}/ft_strlcpy.c \
+			${SRC_DIR}/ft_strlen.c \
+			${SRC_DIR}/ft_strmapi.c \
+			${SRC_DIR}/ft_strncmp.c \
+			${SRC_DIR}/ft_strnstr.c \
+			${SRC_DIR}/ft_strrchr.c \
+			${SRC_DIR}/ft_strtrim.c \
+			${SRC_DIR}/ft_substr.c \
+			${SRC_DIR}/ft_tolower.c \
+			${SRC_DIR}/ft_toupper.c \
+			${SRC_DIR}/ft_lstnew.c \
+			${SRC_DIR}/ft_lstadd_front.c \
+			${SRC_DIR}/ft_lstsize.c \
+			${SRC_DIR}/ft_lstlast.c \
+			${SRC_DIR}/ft_lstadd_back.c \
+			${SRC_DIR}/ft_lstdelone.c \
+			${SRC_DIR}/ft_lstclear.c \
+			${SRC_DIR}/ft_lstiter.c \
+			${SRC_DIR}/ft_lstmap.c
 
 OBJS 	=	${SRCS:.c=.o}
 
-OBJSB	=	${SRCSB:.c=.o}
-	
 INC 	=	includes/
 
 CC	=	gcc -Wall -Wextra -Werror
@@ -74,14 +73,11 @@ ${NAME}:	${OBJS}
 all:		${NAME}
 
 clean:
-		rm -f ${OBJS} ${OBJSB}
+		rm -f ${OBJS}
 
 fclean:		clean
 		rm -f ${NAME}
 
 re:		fclean all
 
-bonus:		${OBJS} ${OBJSB}
-		ar rc ${NAME} ${OBJS} ${OBJSB}
-
-.PHONY:	all clean fclean re bonus
+.PHONY:	all clean fclean re 

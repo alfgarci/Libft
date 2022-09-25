@@ -6,11 +6,11 @@
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 17:03:13 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/09/21 18:54:29 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/09/25 16:28:50 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 static int	get_numdigs(unsigned int n)
 {

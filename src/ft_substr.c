@@ -6,11 +6,11 @@
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 14:48:19 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/09/21 22:47:32 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/09/25 16:32:55 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../includes/libft.h"
 
 char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
