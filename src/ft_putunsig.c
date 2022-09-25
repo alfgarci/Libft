@@ -6,7 +6,7 @@
 /*   By: alfgarci <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/25 04:07:58 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/09/25 17:40:37 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/09/25 17:56:32 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ static char	*ft_itoa_unsigned(unsigned long int n)
 	char	*cad;
 
 	i = -1;
-	num_digs = get_numdigs(n * -(n < 0) + n * (n >= 0)) + (n < 0);
+	num_digs = get_numdigs(n * -(n < 0) + n * (n >= 0));
 	cad = (char *)malloc((num_digs + 1) * sizeof(char));
 	if (!cad)
 		return (NULL);
@@ -44,7 +44,7 @@ static char	*ft_itoa_unsigned(unsigned long int n)
 	}
 	while (++i < num_digs)
 	{
-		cad[num_digs - i] = (n % 10) + 48;
+		cad[num_digs - i -1] = (n % 10) + 48;
 		n /= 10;
 	}
 	cad[i] = '\0';
