@@ -6,7 +6,7 @@
 /*   By: alfgarci <alfgarci@student.42madrid.com>   +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/09/15 14:48:19 by alfgarci          #+#    #+#             */
-/*   Updated: 2022/09/25 16:32:55 by alfgarci         ###   ########.fr       */
+/*   Updated: 2022/10/20 16:53:53 by alfgarci         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,7 @@
 char	*ft_substr(const char *s, unsigned int start, size_t len)
 {
 	char	*sub;
-	size_t	i;
 
-	i = 0;
 	if (!s)
 		return (NULL);
 	if (len > ft_strlen(s + start))
